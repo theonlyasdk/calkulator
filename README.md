@@ -27,5 +27,5 @@ For e.g if I input `1+1+1`, the following AST is generated:
   }
 }
 ```
-It's a bit buggy as some edge cases are not implemented, but it does work fine (try it out yourself).
+Though it is a bit buggy as some edge cases are not implemented, it works fine for most simple expressions (try it out yourself).
 Bracket evaluation is not supported.
