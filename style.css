@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+    --color-accent: #f4b266;
+    --color-btn-text: black;
+}
+
+.zalando-sans {
+    font-family: "Zalando Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.zalando-sans-expanded {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.page-title {
+    font-size: 2em;
+}
+
+.display {
+    height: 5em;
+}
+
+.calc-display {
+    font-size: 1em;
+    outline: none;
+    border: none;
+    font-family: "JetBrains Mono", monospace;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: end;
+}
+
+.calc-display:active {
+    outline: none;
+    border: none;
+}
+
+.calc-btn {
+    width: 100%;
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--color-accent);
+    color: var(--color-btn-text);
+    border-radius: 0;
+    transition: none;
+}
+
+.calc-btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-btn-text);
+}
+
+.calc-btn:focus-visible {
+    background-color: var(--color-accent);
+    color: var(--color-btn-text);
+    transform: scale(1.1);
+}
+
+.calc-btn:active {
+    transform: scale(0.95);
+}
+
+.calc-card {
+    width: 50%;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+        "k k k";
+    gap: 0.8rem 0.5rem;
+    padding: 10px;
+}
+
+.link-bar-icon {
+    font-size: 1.5rem;
+    transition:
+        color 100ms ease-out,
+        transform 100ms ease-out;
+    color: gray;
+}
+
+.link-bar-icon:hover {
+    color: gainsboro;
+}
+
+.link-bar-icon:active {
+    transform: scale(0.9);
+}
+
+.company-branding {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+body[data-bs-theme="light"] {
+    .link-bar-icon:hover {
+        color: dimgray;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .link-bar-icon:hover {
+        color: dimgray;
+    }
+}
+
+@media (max-width: 768px) {
+    .calc-card {
+        width: 90%;
+    }
+}
