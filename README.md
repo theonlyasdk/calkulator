@@ -1,8 +1,8 @@
 # calkulator
-My first time making a calculator for the web. Includes a custom expression evaluator that generates and evaluates AST from a string
+A simply complicated mathematical expression evaluator that generates and evaluates an AST from an input string.
 
 ### AST example
-For e.g if I input `1+1+1`, the following AST is generated:
+For e.g if I input `1+1+1`, the program will generate the following AST:
 ```json
 {
   "type": "BinaryOp",
@@ -28,4 +28,4 @@ For e.g if I input `1+1+1`, the following AST is generated:
 }
 ```
 Though it is a bit buggy as some edge cases are not implemented, it works fine for most simple expressions (try it out yourself).
-Bracket evaluation is not supported.
+Bracket evaluation is not supported (i.e `(1 + 2) + 3`, `((32 / 2) - 8) / (32)` and so on)
