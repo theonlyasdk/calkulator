@@ -1,5 +1,5 @@
 # calkulator
-A simply complicated mathematical expression evaluator that generates and evaluates an AST from an input string.
+A simple mathematical expression evaluator that generates and evaluates an AST from an input string.
 
 ### AST example
 For e.g if I input `1+1+1`, the program will generate the following AST:
